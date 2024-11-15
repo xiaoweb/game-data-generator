@@ -12,6 +12,7 @@ files:
 asarUnpack:
   - resources/**
 win:
+  icon: resources/icon.icns
   executableName: generatinggamedata
 nsis:
   artifactName: ${name}-${version}-setup.${ext}
@@ -29,6 +30,10 @@ mac:
 dmg:
   artifactName: ${name}-${version}.${ext}
 linux:
+  icon: resources/icon.icns
+  desktop:
+    Name: Games Data Generator
+    Comment[de]: Heroic Games Data Generator
   target:
     - AppImage
     - snap
